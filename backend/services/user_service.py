@@ -3,6 +3,7 @@ from backend.interfaces.user_repository import UserRepositoryInterface
 from backend.entities.user import User
 from backend.entities.user import UserCreate
 
+
 class UserService(UserServiceInterface):
     def __init__(self, user_repository: UserRepositoryInterface):
         self.user_repository = user_repository

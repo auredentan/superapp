@@ -6,18 +6,20 @@ from backend.infrastructure.containers.user_container import UserContainer
 
 router = APIRouter()
 
+
 @router.post("/", response_model=User)
 @inject
 def create_user(
     user: UserCreate,
-    user_service: UserService = Depends(Provide[UserContainer.user_service])
+    user_service: UserService = Depends(Provide[UserContainer.user_service]),
 ):
     return user_service.create_user(user)
+
 
 @router.get("/{user_id}", response_model=User)
 @inject
 def read_user(
     user_id: int,
-    user_service: UserService = Depends(Provide[UserContainer.user_service])
+    user_service: UserService = Depends(Provide[UserContainer.user_service]),
 ):
     return user_service.get_user(user_id)
