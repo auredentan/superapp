@@ -5,6 +5,7 @@ from backend.entities.user import User
 from backend.entities.user import UserCreate
 from backend.interfaces.user_repository import UserRepositoryInterface
 
+
 class SQLAlchemyUserRepository(UserRepositoryInterface):
     def __init__(self, session_factory: Callable[[], Session]):
         self.session_factory = session_factory
