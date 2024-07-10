@@ -9,7 +9,7 @@ backend.lint:
 	poetry run ruff check --fix backend
 	@echo "----------------------------"
 	poetry run black backend
-	@echo "----------------------------"
+	@echo "-----------------------------"
 	poetry run mypy backend
 
 backend.sql.autogen:
