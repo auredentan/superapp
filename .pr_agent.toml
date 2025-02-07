@@ -1,0 +1,15 @@
+# https://github.com/qodo-ai/pr-agent/blob/main/pr_agent/settings/configuration.toml
+[config]
+# models
+model="gemini-2.0-exp-02-05"
+
+git_provider="github"
+ai_timeout=120 # 2minutes
+skip_keys = []
+# token limits
+max_description_tokens = 500
+max_commits_tokens = 2000
+max_model_tokens = 1280000 # Limits the maximum number of tokens that can be used by any model, regardless of the model's default capabilities.
+custom_model_max_tokens=-1 # for models not in the default list
+
+ignore_pr_title = ["^\\[Auto\\]", "^Auto"] # a list of regular expressions to match against the PR title to ignore the PR agent
