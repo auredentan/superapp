@@ -5,7 +5,7 @@ model="gemini-2.0-pro-exp-02-05"
 
 git_provider="github"
 ai_timeout=120 # 2minutes
-skip_keys = []
+verbosity_level=2
 # token limits
 max_description_tokens = 500
 max_commits_tokens = 2000
