@@ -1,8 +1,8 @@
 # https://github.com/qodo-ai/pr-agent/blob/main/pr_agent/settings/configuration.toml
 [config]
 # models
-model="google_ai_studio/gemini-2.0-pro-exp-02-05"
-fallback_models=["google_ai_studio/gemini-1.5-flash"]
+model="gemini/gemini-2.0-flash-exp"
+fallback_models=["gemini/gemini-1.5-flash"]
 
 git_provider="github"
 ai_timeout=120 # 2minutes
