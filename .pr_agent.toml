@@ -1,7 +1,7 @@
 # https://github.com/qodo-ai/pr-agent/blob/main/pr_agent/settings/configuration.toml
 [config]
 # models
-model="gemini-2.0-pro-exp-02-05"
+model="google_ai_studio/gemini-2.0-pro-exp-02-05"
 
 git_provider="github"
 ai_timeout=120 # 2minutes
