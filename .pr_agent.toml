@@ -2,12 +2,11 @@
 [config]
 # models
 model="google_ai_studio/gemini-2.0-pro-exp-02-05"
+fallback_models=["google_ai_studio/gemini-1.5-flash"]
 
 git_provider="github"
 ai_timeout=120 # 2minutes
 verbosity_level=2
-
-cli_mode=true
 # token limits
 max_description_tokens = 500
 max_commits_tokens = 2000
